@@ -10,6 +10,7 @@ Frontend do projeto **Twitter N1**, uma interface inspirada no Twitter feita com
 - CSS (estilização customizada com tons de verde e preto)
 
 ## ⚙️ Estrutura de Pastas
+```bash
 frontend/
 ├── public/
 ├── src/
@@ -20,6 +21,7 @@ frontend/
 │ ├── main.jsx # Ponto de entrada do React
 │ └── styles.css # Estilo global
 └── vite.config.js
+```
 
 ## 📄 Páginas
 
