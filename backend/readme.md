@@ -13,6 +13,7 @@ Este é o backend do projeto **Twitter N1**, uma aplicação estilo “mini Twit
 
 ## ⚙️ Estrutura de Pastas
 
+```bash
 backend/
 ├── src/
 │ ├── controllers/ # Lógica das rotas
@@ -23,6 +24,7 @@ backend/
 │ └── index.js # Ponto de entrada
 ├── .env # Variáveis de ambiente (Mongo URI)
 └── config # Conexão com o Banco de Dados
+```
 
 ## 🧩 Rotas da API
 
