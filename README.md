@@ -1,6 +1,6 @@
 # Twitter N1
 
-Um projeto de um blog simples inspirado no Twitter, desenvolvido com **Node.js**, **Express**, **MongoDB**, **React** e **Vite**.
+Um projeto de um blog simples inspirado no Twitter e criado por mim, Isaac Ramos Magalhães. O site foi desenvolvido com **Node.js**, **Express**, **MongoDB**, **React** e **Vite**.
 
 ---
 
