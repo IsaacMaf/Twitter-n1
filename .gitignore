@@ -1,0 +1,60 @@
+# ===========================================
+# Node.js (Back + Frontend)
+# ===========================================
+
+# Dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.seed
+*.pid.lock
+
+# Ambiente(senhas)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache
+.cache/
+.tmp/
+temp/
+*.tmp
+
+# Build de produção(gerado pelo front)
+dist/
+build/
+public/build/
+
+# Editor / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Sistema
+*.swp
+*.swo
+*.bak
+*.old
+*.orig
+
+# Testes
+coverage/
+test-results/
+
+# ===========================================
+# Git
+# ===========================================
+# Ignorar arquivos criados pelo sistema de controle
+*.orig
