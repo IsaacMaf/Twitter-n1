@@ -1,9 +1,9 @@
-const express = require('express');
+import express from "express";
+import { createUser, listUsers } from "../controllers/user.controller.js";
+import { validateUser } from "../middlewares/validateUser.js";
+
 const router = express.Router();
-const { createUser, listUsers } = require('../controllers/user.controller');
-const { validateUser } = require('../middlewares/validateUser');
+router.post("/", validateUser, createUser);
+router.get("/", listUsers);
 
-router.post('/', validateUser, createUser);
-router.get('/', listUsers);
-
-module.exports = router;
+export default router;

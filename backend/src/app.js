@@ -1,27 +1,30 @@
-const express = require('express');
-const cors = require('cors');
+import express from "express";
+import cors from "cors";
 
-import { logger } from './middlewares/logger.js';
-import { errorHandler } from './middlewares/errorHandler.js';
+import { logger } from "./middlewares/logger.js";
+import { errorHandler } from "./middlewares/errorHandler.js";
 
-const userRoutes = require('./routes/user.routes');
-const postRoutes = require('./routes/posts.routes');
-const commentRoutes = require('./routes/comments.routes');
+import userRoutes from "./routes/user.routes.js";
+import postRoutes from "./routes/posts.routes.js";
+import commentRoutes from "./routes/comments.routes.js";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
+// middlewares
 app.use(logger);
 app.use(errorHandler);
 
-app.use('/api/users', userRoutes);
-app.use('/api/posts', postRoutes);
-app.use('/api/comments', commentRoutes);
+// rotas principais
+app.use("/api/users", userRoutes);
+app.use("/api/posts", postRoutes);
+app.use("/api/comments", commentRoutes);
 
-app.get('/', (req, res) => {
-  res.send('Servidor do "Twitter" rodando ');
+// rota inicial
+app.get("/", (req, res) => {
+  res.send('Servidor do "Twitter" rodando');
 });
 
-module.exports = app;
+export default app;

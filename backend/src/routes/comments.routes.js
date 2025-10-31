@@ -1,8 +1,9 @@
-const express = require('express');
+import express from "express";
+import { createComment, listCommentsByPost } from "../controllers/comments.controller.js";
+
 const router = express.Router();
-const { createComment, listCommentsByPost } = require('../controllers/comments.controller');
 
-router.post('/', createComment);
-router.get('/:postId', listCommentsByPost);
+router.post("/", createComment);
+router.get("/:postId", listCommentsByPost);
 
-module.exports = router;
+export default router;
