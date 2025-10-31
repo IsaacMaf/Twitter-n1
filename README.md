@@ -35,9 +35,9 @@ cd backend
 npm install
 npm run dev
 ```
-----------------
-**segundo terminal**
-----------------
+### ----------------
+### segundo terminal
+### ----------------
 ```bash
 cd frontend
 npm install
