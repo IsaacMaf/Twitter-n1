@@ -14,12 +14,11 @@ const PostPage = () => {
   if (!post) return <p>Carregando...</p>;
 
   return (
-    <div className="page">
+    <div className="page" style={{ padding: "20px", color: "#d9ffd9" }}>
       <h2>@{post.author?.username}</h2>
       <p>{post.content}</p>
       <small>{new Date(post.createdAt).toLocaleString()}</small>
-
-      <hr />
+      <hr style={{ margin: "20px 0", borderColor: "#5d00ffff" }} />
       <CommentList postId={id} />
     </div>
   );

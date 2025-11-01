@@ -35,3 +35,20 @@ export const listPosts = async (req, res) => {
       .json({ message: "Erro ao listar posts", error: err.message });
   }
 };
+
+export const getPostById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const post = await Post.findById(id).populate("author", "name username");
+
+    if (!post) {
+      return res.status(404).json({ message: "Post não encontrado" });
+    }
+
+    res.json(post);
+  } catch (err) {
+    res
+      .status(500)
+      .json({ message: "Erro ao buscar post", error: err.message });
+  }
+};
